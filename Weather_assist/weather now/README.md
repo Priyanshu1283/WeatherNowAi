@@ -1,16 +1,67 @@
-# React + Vite
+# 🌦️ WeatherNow AI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+WeatherNow AI is a simple and user-friendly web application that provides **real-time weather information** for any city and enhances it with **AI-generated, human-friendly explanations**.
 
-Currently, two official plugins are available:
+The goal of this project is to combine **accurate weather APIs** with **Generative AI** to make weather data easier to understand and more useful for users.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Project Flow
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. **User enters a city name**
+2. The app sends the city name to a **Weather API**
+3. The Weather API returns **real-time weather data**
+4. This weather data is sent to **AI (Gemini)**
+5. AI converts raw data into a **natural, human-readable response**
+6. The UI displays both:
+   - Weather details
+   - AI-generated explanation
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🧠 Why AI is Used
+
+Weather APIs return **raw, technical data** (temperature, condition, humidity).  
+AI is used to:
+- Convert technical data into **natural language**
+- Provide **weather-aware suggestions**
+- Improve overall **user experience**
+
+> Example:  
+> *“It’s a sunny 32°C day in Bhopal — a good time to enjoy outdoor activities.”*
+
+---
+
+## 🛠️ Technologies Used
+
+### Frontend
+- **React.js** – Component-based UI
+- **Vite** – Fast development build tool
+- **Tailwind CSS** – Responsive styling
+- **Framer Motion** – Smooth UI animations
+
+### APIs
+- **Open-Meteo API**
+  - City geocoding (latitude & longitude)
+  - Real-time weather data
+- **Google Gemini API**
+  - AI-generated natural language responses
+
+---
+
+## 🔄 Data Flow Diagram (Conceptual)
+
+User Input (City)
+↓
+Geocoding API (City → Coordinates)
+↓
+Weather API (Real-time Weather Data)
+↓
+Gemini AI (Human-friendly Explanation)
+↓
+UI Display
+
+👨‍💻 Author
+
+Priyanshu Kumar
+Frontend & Full Stack Developer
