@@ -153,7 +153,7 @@ export default function Weather() {
             placeholder="Enter city name..."
             value={city}
             onChange={(e) => setCity(e.target.value)}
-            className="flex-1 px-4 py-2 rounded-lg text-gray-900 focus:outline-none"
+            className="flex-1 px-4 py-2 rounded-lg text-gray-900 focus:outline-none bg-blue-300"
           />
           <motion.button
             whileHover={{ scale: 1.05 }}
