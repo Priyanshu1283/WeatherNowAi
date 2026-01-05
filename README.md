@@ -1,3 +1,6 @@
+Live Link: https://weather-now-ai-seven.vercel.app/
+
+
 # 🌦️ WeatherNow AI
 
 WeatherNow AI is a simple and user-friendly web application that provides **real-time weather information** for any city and enhances it with **AI-generated, human-friendly explanations**.
